@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tabela de Clientes</h1>
+
+    <!-- Barra de Busca -->
+    <input type="text" id="searchBar" placeholder="Buscar por Nome, Agência ou Conta" onkeyup="buscarCliente()"> <br> <br>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do Cliente</th>
+                <th>Número da Agência</th>
+                <th>Número da Conta</th>
+                <th>Saldo Disponível</th>
+                <th>Transferência</th>
+                <th>Depósito</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody id="clientesTableBody">
+            <!-- Clientes serão adicionados aqui dinamicamente -->
+        </tbody>
+    </table>
+
+    <br> <br>
+
+    <a href="index.html">Tabela</a>
+
+    <script src="tabela.js"></script>
+</body>
+</html>
