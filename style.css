@@ -1,27 +1,74 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Azul suave para o fundo */
     margin: 20px;
+    color: #333; /* Cor do texto para melhor legibilidade */
 }
 
 form {
     margin-bottom: 20px;
+    background-color: #ffffff; /* Fundo branco para contraste */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas para suavidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
+    background-color: #fff; /* Fundo branco para as células */
+    border-radius: 10px;
+    overflow: hidden; /* Para garantir bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para a tabela */
 }
 
 th, td {
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    border: 1px solid #ddd; /* Borda mais suave */
+}
+
+th {
+    background-color: #6a5acd; /* Cor de fundo dos cabeçalhos (roxo claro) */
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9; /* Fundo claro para as células */
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+td:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
 }
 
 button {
-    padding: 5px 10px;
+    background-color: #ff6347; /* Laranja vibrante para os botões */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff4500; /* Escurece o laranja no hover */
+}
+
+button:active {
+    background-color: #c74c3a; /* Cor mais escura ao clicar */
+    transform: scale(0.98); /* Pequeno efeito de clique */
+}
+
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
